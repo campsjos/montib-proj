@@ -1,0 +1,38 @@
+{
+  "name": "montiboli",
+  "description": "Projecte maquetació Montíboli",
+  "version": "1.0.0",
+  "authors": [
+    "Atoom Studio <info@atoomstudio.com>"
+  ],
+  "license": "All rights reserved",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "bootstrap",
+    "boilerplate",
+    "skeleton",
+    "scaffolding",
+    "scaffold",
+    "theme",
+    "themes",
+    "kickstart",
+    "kickstarter",
+    "micromata",
+    "workflow"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "jquery": "1.12.4",
+    "html5shiv": "3.7.3",
+    "respondJs": "1.4.2",
+    "jquery-placeholder": "2.3.1"
+
+  },
+  "resolutions": {
+    "jquery": "1.12.4"
+  }
+}
