@@ -1,0 +1,67 @@
+<div id="reservar">
+    <img alt="" class="b_cerrar_reservas" src="/assets/img/b_cerrar.png" />
+    <div class="container-fluid max1600 medium-area">
+        <form action="" method="get">
+            <div class="row">
+                <div class="col-sm-6 col-md-5 col-lg-4">
+                    <div class="row visible-xs">
+                        <div class="col-xs-12 col">
+                            <input type="text" class="date01" id="datetimepicker1" name="fecha_entrada" readonly/>
+                        </div>
+                        <div class="col-xs-12 col">
+                            <input type="text" class="date01" id="datetimepicker2" name="fecha_salida" readonly/>
+                        </div>
+                    </div>
+                    <div class="row visible-xs">
+                        <div class="col-md-12 col text-center">
+                            <p class="help-block noches">1 noche</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col">
+                            <select class="select01" name="habitaciones">
+                                <option value="">Num. habitaciones</option>
+                                <option value="1">1 habitaciones</option>
+                                <option value="2">2 habitaciones</option>
+                                <option value="3">3 habitaciones</option>
+                                <option value="4">4 habitaciones</option>
+                                <option value="5">5 habitaciones</option>
+                                <option value="6">6 habitaciones</option>
+                                <option value="7">7 habitaciones</option>
+                                <option value="8">8 habitaciones</option>
+                            </select>
+                            <div class="habitaciones"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col">
+                            <input type="submit" class="b_generic01" value="Enviar" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-7 col-lg-8">
+                    <div class="row hidden-xs">
+                        <div class="col-md-6 col">
+                            <div class="titol-data">Fecha entrada</div>
+                            <input type="text" class="rangepicker" name="fecha_entrada" readonly id="fecha_entrada" />
+                        </div>
+                        <div class="col-md-6 col">
+                            <div class="titol-data">Fecha salida</div>
+                            <input type="text" class="rangepicker" name="fecha_salida" readonly id="fecha_salida" />
+                        </div>
+                    </div>
+                    <div class="row hidden-xs">
+                        <div class="col-md-12 col text-center">
+                            <p class="help-block noches">1 noche</p>
+                        </div>
+                    </div>
+                    <div class="row hidden-xs">
+                        <div class="col-md-12 col">
+                            <div id="bookingrangepicker"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

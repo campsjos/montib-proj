@@ -1,0 +1,109 @@
+---
+contacto: active
+---
+    {{> reservar }}
+    {{> header }}
+
+    {{!-- begin: content container --}}
+    <div class="container-fluid banner-pagina-interior banner-standard banner-no-photo">
+        <div class="text-banner-interior">
+            <h1>Formulario</h1>
+            <h2>- Ejemplo de texto -</h2>
+        </div>
+    </div>
+
+    <div id="section-content" class="light-bg">
+        <div id="breadcrumbs" class="container">
+            <ol class="breadcrumb center-block">
+                <li><a href="#">Inicio</a></li>
+                <li class="active">Formulario</li>
+            </ol>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="texto-presentacion-seccion small-area">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum efficitur laoreet elementum. Nulla sed sapien eget ante auctor tempor sit amet quis sapien. Aliquam erat volutpat. Mauris at volutpat nunc</p>
+                </div>
+            </div>
+        </div>    
+        <div id="cont-form" class="container">
+        <div class="generic-form medium-area">
+            <div class="result success">Mensaje enviado</div>
+            <div class="result wrong">El campo teléfono no es válido</div>
+            <div class="result warning">El campo teléfono es obligatorio</div>
+                <form class="form01 small-area">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="sr-only" for="nombre">Nombre</label>
+                                <input id="nombre" type="text" name="nombre" placeholder="díganos su nombre *" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="sr-only" for="email">Email</label>
+                                <input id="email" type="text" name="mail" placeholder="déjenos su email *" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="sr-only" for="comentario">Comentario</label>
+                                <textarea id="comentario" name="comentario" placeholder="coméntanos lo que desee..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group form-group-small">
+                                <h4>Grupo de formulario</h4>
+                                <input class="check01" id="check01" type="checkbox" /> <label for="check01"><span></span>Opción 1</label><br />
+                                <input class="check01" id="check02" type="checkbox" /> <label for="check02"><span></span>Opción 2</label><br />
+                                <input class="check01" id="check03" type="checkbox" /> <label for="check03"><span></span>Opción 3</label><br />
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="form-group form-group-small">
+                                <h4>Grupo de formulario</h4>
+                                <input class="radio01" id="radio01" type="radio" name="opcio" /> <label for="radio01"><span></span>Opción 1</label><br />
+                                <input class="radio01" id="radio02" type="radio" name="opcio" /> <label for="radio02"><span></span>Opción 2</label><br />
+                                <input class="radio01" id="radio03" type="radio" name="opcio" /> <label for="radio03"><span></span>Opción 3</label><br />
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="form-group form-group-small">
+                                <h4>Grupo de formulario</h4>
+                                <input class="date01 datetimepicker" type="text" readonly /><br />
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="form-group form-group-small">
+                                <h4>Grupo de formulario</h4>
+                                <select class="select01" name="cars">
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="fiat">Fiat</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <div class="g-recaptcha" data-sitekey="6LcieCATAAAAAGULoIP-_WjRSqKQn7jYOH6ZR9lK"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <input class="check02" id="norobot" type="checkbox" /> <label for="norobot"><span></span>No soy un robot</label><br /> -->
+                    <input type="submit" class="b_generic01" value="Enviar" />
+                </form>
+            </div>   
+        </div>
+    </div>
+    {{!-- end: content container --}}
+    {{> footer }}

@@ -1,0 +1,80 @@
+<div id="header_wrapper" class="navbar navbar-default">
+    <div id="header" class="container-fluid">
+        <div class="row">
+            <div id="lang-wrapper" class="col-xs-2 col-lg-1">
+                <div class="dropdown">
+                    <button id="language_selector" type="button" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-flag hidden-xs" aria-hidden="true"></span>
+                        <span class="main-lang">&nbsp;Español</span><span class="glyphicon glyphicon-menu-down"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-language">
+                        <li><a href="">Català</a></li>
+                        <li><a href="">English</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="logo-wrapper" class="col-xs-8 col-lg-10 text-center">
+                <div id="logo">
+                    <img title="Hotel Servigroup Montiboli" class="img-responsive" src="/assets/img/logo-symbol.png" alt="Hotel Servigroup Montiboli" />
+
+                    <div class="text">
+                        <span>Web Oficial</span>
+                        {{#if page.home}}
+                            <h1 class="brand">Hotel <strong>Servigroup</strong><br><strong class="big">Montiboli</strong><sup><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i></sup></h1>
+                        {{else }}
+                            <p class="brand">Hotel <strong>Servigroup</strong><br><strong class="big">Montiboli</strong><sup><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i></sup></p>
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
+            <div id="book-wrapper" class="col-xs-2 col-lg-1 visible-lg">
+                <div class="book-area dropdown">
+                    <button class="b_reservar" class="b_reservar" type="button">
+                        Reservas
+                    </button>
+                    <button class="b_opciones" type="button" data-toggle="dropdown">
+                        <img alt="" class="center-block" src="/assets/img/fletxa_link.png" />
+                    </button>
+                    <ul class="dropdown-menu dropdown-opcions">
+                        <li class="mi-reserva"><a href="">Mi reserva</a></li>
+                        <li class="tarifas"><a href="">Tarifas</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-2">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="main-nav-container" class="container-fluid">
+        <div class="row cont-menu center-block">
+            <div class="col-sm-12">
+                {{> navbar }}
+            </div>
+        </div>
+        <div class="container-fluid hidden-lg">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="book-area dropdown">
+                        <button class="b_reservar" type="button">
+                            Reserva ahora<img alt="" src="/assets/img/fletxa_link.png" />
+                        </button>
+                        <button class="b_opciones" type="button" data-toggle="dropdown">
+                            <img alt="" class="center-block" src="/assets/img/fletxa_link.png" />
+                        </button>
+                        <ul class="dropdown-menu dropdown-opcions">
+                            <li class="mi-reserva"><a href="">Mi reserva</a></li>
+                            <li class="tarifas"><a href="">Tarifas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>

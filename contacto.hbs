@@ -1,0 +1,68 @@
+---
+contacto: active
+---
+    {{> reservar }}
+    {{> header }}
+
+    {{!-- begin: content container --}}
+    <div class="container-fluid map">
+        <div id="map"></div>
+    </div>
+    <div id="section-content" class="light-bg">
+        <div id="breadcrumbs" class="container">
+            <ol class="breadcrumb center-block">
+                <li><a href="#">Inicio</a></li>
+                <li class="active">Contacto</li>
+            </ol>
+        </div>
+        
+        <div id="info-contacto" class="container small-area">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Contacte con nosotros</h1>
+                    <h2>- Siempre a su disposición -</h2>
+                    <div class="address-contacto">
+                        Hotel Servigroup Montíboli*****<br />
+                        Partida Montíboli S/N | E-03570 Villajoyosa (Alicante)<br />
+                        <br />
+                        montiboli@servigroup.es<br />
+                        Tel. + 34 96 589 02 50 | Fax + 34 96 589 38 57<br />
+                        <br />
+                        <a class="link_xarxa_contacto facebook" href="">Síguenos en Facebook</a>
+                        <div class="visible-xs"></div>
+                        <a class="link_xarxa_contacto pinterest" href="">Saboréanos en Pinterest</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="cont-form-contacto" class="container-fluid">
+            <div class="row max1200 center-block">
+                <div class="cont-form-info medium-area">
+                    <div class="info-buzon">
+                        <h3>Buzón de sugerencias</h3>
+                        Si lo deseas, a través de este espacio, puedes enviarnos tu opinión acerca del hotel o de nuestra web, alguna sugerencia que nos ayude a mejorar, o simplemente, preguntarnos alguna duda que tengas. Todas las ideas que nos envíes serán bien recibidas y tenidas en cuenta.
+                    </div>
+                    <form class="form01">
+                        <div class="form-group">
+                            <label class="sr-only" for="nombre">Nombre</label>
+                            <input id="nombre" type="text" name="nombre" placeholder="díganos su nombre *" />
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="email">Email</label>
+                            <input id="email" type="text" name="mail" placeholder="déjenos su email *" />
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="comentario">Comentario</label>
+                            <textarea id="comentario" name="comentario" placeholder="coméntanos lo que desee..."></textarea>
+                        </div>
+                        <!-- <input class="check02" id="norobot" type="checkbox" /> <label for="norobot"><span></span>No soy un robot</label><br /> -->
+                        <div class="g-recaptcha" data-sitekey="6LcieCATAAAAAGULoIP-_WjRSqKQn7jYOH6ZR9lK"></div>
+                        <input type="submit" class="b_generic01" value="Enviar" />   
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{!-- end: content container --}}
+    {{> footer }}

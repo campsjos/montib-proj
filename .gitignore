@@ -11,7 +11,7 @@
 ### Build ###
 /*.zip
 /docs
-/server
+#/server
 /reports
 /assets/css
 /assets/js/*.min.js

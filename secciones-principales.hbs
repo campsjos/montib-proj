@@ -1,0 +1,100 @@
+---
+secciones_principales: active
+---
+    {{> reservar }}
+    {{> header }}
+
+    {{!-- begin: content container --}}
+    <style type="text/css">
+        .banner-pagina-interior {
+            background-image:url(/assets/img/banners/banner-el-hotel.jpg);
+        }
+        @media (max-width:767px){ 
+            .banner-pagina-interior {
+                background-image:url(/assets/img/banners/banner-el-hotel@xs.jpg);
+            }
+        }
+    </style>
+    <div class="container-fluid banner-pagina-interior banner-standard">
+    	<div class="degradat-banner-interior"></div>
+    	<div class="text-banner-interior">
+        	<h1>Montíboli: El hotel</h1>
+            <h2>- Servicio de calidad -</h2>
+        </div>
+    </div>
+    <div id="section-content" class="light-bg">
+    <div id="breadcrumbs" class="container">
+        <ol class="breadcrumb center-block">
+        	<li><a href="#">Inicio</a></li>
+        	<li class="active">El hotel</li>
+        </ol>
+    </div>
+    
+    <div class="container">
+    	<div class="row">
+        	<div class="col-sm-12">
+            	<p class="texto-presentacion-seccion small-area">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum efficitur laoreet elementum. Nulla sed sapien eget ante auctor tempor sit amet quis sapien. Aliquam erat volutpat. Mauris at volutpat nunc</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="sections-blocks" class="container-fluid max1600">
+        <div class="row padding_sides_3">
+            <div class="col-sm-6 col-md-4 padding_sides_3 section-block load-item">
+                <a title="" href="#" class="image-effect-link"><img alt="" data-src="/assets/img/home/habitaciones.jpg" class="lazy img-responsive-100x100" /></a>
+                <h2 class="titol_seccio_01"><a title="" href="#">Habitaciones</a></h2>
+                <div class="linia02"></div>
+            </div>
+            <div class="col-sm-6 col-md-4 padding_sides_3 section-block load-item">
+                <a title="" href="#" class="image-effect-link"><img alt="" data-src="/assets/img/home/instalaciones.jpg" class="lazy img-responsive-100x100" /></a>
+                <h2 class="titol_seccio_01"><a title="" href="#">Instalaciones</a></h2>
+                <div class="linia02"></div>
+            </div>
+            <div class="clearfix visible-sm-block"></div>
+
+            <div class="col-sm-6 col-md-4 padding_sides_3 section-block load-item">
+                <a title="" href="#" class="image-effect-link"><img alt="" data-src="/assets/img/home/gastronomia.jpg" class="lazy img-responsive-100x100" /></a>
+                <h2 class="titol_seccio_01"><a title="" href="#">Gastronomía</a></h2>
+                <div class="linia02"></div>
+            </div>
+
+            <div class="clearfix visible-md-block visible-lg-block"></div>
+
+            <div class="col-md-offset-2 col-sm-6 col-md-4 padding_sides_3 section-block load-item">
+                <a title="" href="#" class="image-effect-link"><img alt="" data-src="/assets/img/home/galeria.jpg" class="lazy img-responsive-100x100" /></a>
+                <h2 class="titol_seccio_01"><a title="" href="#">Galeria</a></h2>
+                <div class="linia02"></div>
+            </div>
+
+            <div class="clearfix visible-sm-block"></div>
+            <div class="col-sm-offset-3 col-md-offset-0 col-sm-6 col-md-4 padding_sides_3 section-block load-item">
+                <a title="" href="#" class="image-effect-link"><img alt="" data-src="/assets/img/home/situacion_y_contacto.jpg" class="lazy img-responsive-100x100" /></a>
+                <h2 class="titol_seccio_01"><a title="" href="#">Situación y contacto</a></h2>
+                <div class="linia02"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+    	<div class="row">
+        	<div class="col-xs-12 titol_home_02 medium-area">destacamos  sobre  el  Mediterraneo</div>
+        </div>
+    </div>
+    
+        <div id="container_opiniones" class="container-fluid hidden-xs big-area">
+            <div class="row max1200 center-block cont_opinion">
+                <div class="col-xs-12">
+                    <h2>Opiniones de los clientes</h2>
+                    <div class="linia03"></div>
+                    <div class="opinio padding_sides_20percent">
+                        <img alt="" src="/assets/img/ico_comillas01.png" class="ico_comillas_l" />
+                        <img alt="" src="/assets/img/ico_comillas02.png" class="ico_comillas_r" />
+                        <h3>Tranquilidad y buena comida</h3>
+                        Hotel excelente, habitaciones amplias y muy limpias, buena comida, paisaje espectacular, ubicación idónea solo me folló la almohada, muy baja y me costó dormir. El servicio esquisto y una amabilidad extraordinaria. Muy bien por el personal.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{!-- end: content container --}}
+    {{> footer }}

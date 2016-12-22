@@ -1,21 +1,108 @@
 ---
 home: active
 ---
-	{{> navbar }}
+	{{> reservar }}
+	{{> header }}
 
 	{{!-- begin: content container --}}
-	<div class="container">
+	<div class="container-fluid">
+    	<div id="carousel-home" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active" style="background-image:url(/assets/img/slide_home/01.jpg);">
+                    <div class="carousel-caption">
+                        <h2 class="titol_slide">Sobre el mediterraneo</h2>
+                        <div class="subtitol_slide">tu mejor elección</div>
+                        <div class="linia01"></div>
+                        <a href="" class="link_slide">Vea todas las habitaciones</a>
+                    </div>
+                </div>
+                <!--[if lt IE 9]><!-->
+                <div class="item">
+                    <iframe src="http://ipcamlive.com/player/player.php?alias=5742e4ba07511&autoplay=1"></iframe>
+                    <div class="carousel-caption"></div>
+                </div>
+                <!--<![endif]-->
+                <div class="item">
+                    <iframe src="https://www.youtube.com/embed/vIbTZknuAQQ?autoplay=1"></iframe>
+              	</div>
+            </div>
+            
+            <button type="button" class="b_scroll">
+            	Scroll
+                <img alt="" src="/assets/img/ico_fletxa.png" />
+            </button>
+          
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-home" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div id="section-content" class="light-bg">
+    <div id="sections-blocks" class="container-fluid max1600">
+    	<div class="row padding_sides_3">
+        	<div class="col-sm-6 col-md-4 padding_sides_3 section-block load-item">
+            	<a title="" href="#" class="image-effect-link"><img alt="" data-src="/assets/img/home/habitaciones.jpg" class="lazy img-responsive-100x100" /></a>
+                <h2 class="titol_seccio_01"><a title="" href="#">Habitaciones</a></h2>
+                <div class="linia02"></div>
+            </div>
+        	<div class="col-sm-6 col-md-4 padding_sides_3 section-block load-item">
+            	<a title="" href="#" class="image-effect-link"><img alt="" data-src="/assets/img/home/instalaciones.jpg" class="lazy img-responsive-100x100" /></a>
+                <h2 class="titol_seccio_01"><a title="" href="#">Instalaciones</a></h2>
+                <div class="linia02"></div>
+            </div>
 
-		{{!-- begin: content --}}
-		<h1>Bootstrap starter template</h1>
-		<p class="lead">
-			Use this document as a way to quickly start any new project.
-			<br>All you get is this text and a mostly barebones HTML document.
-		</p>
-		<p>
-			Borrowed from the <a href="http://getbootstrap.com/examples/starter-template/">Bootstrap starter template</a>.
-		</p>
-		{{!-- end: content --}}
+            <div class="clearfix visible-sm-block"></div>
 
-	</div>
+        	<div class="col-sm-6 col-md-4 padding_sides_3 section-block load-item">
+            	<a title="" href="#" class="image-effect-link"><img alt="" data-src="/assets/img/home/gastronomia.jpg" class="lazy img-responsive-100x100" /></a>
+                <h2 class="titol_seccio_01"><a title="" href="#">Gastronomía</a></h2>
+                <div class="linia02"></div>
+            </div>
+
+            <div class="clearfix visible-md-block visible-lg-block"></div>
+
+            <div class="col-md-offset-2 col-sm-6 col-md-4 padding_sides_3 section-block load-item">
+            	<a title="" href="#" class="image-effect-link"><img alt=""data-src="/assets/img/home/galeria.jpg" class="lazy img-responsive-100x100" /></a>
+                <h2 class="titol_seccio_01"><a title="" href="#">Galeria</a></h2>
+                <div class="linia02"></div>
+            </div>
+
+            <div class="clearfix visible-sm-block"></div>
+
+        	<div class="col-sm-6 col-sm-offset-3 col-md-offset-0 col-md-4 padding_sides_3 section-block load-item">
+            	<a title="" href="#" class="image-effect-link"><img alt="" data-src="/assets/img/home/situacion_y_contacto.jpg" class="lazy img-responsive-100x100" /></a>
+                <h2 class="titol_seccio_01"><a title="" href="#">Situación y contacto</a></h2>
+                <div class="linia02"></div>
+            </div>
+        </div>
+    </div>
+    
+	    <div class="container hidden-xs">
+	    	<div class="row">
+	        	<div class="col-xs-12 titol_home_02 medium-area">destacamos&nbsp; sobre&nbsp; el&nbsp; Mediterraneo</div>
+	        </div>
+	    </div>
+    
+        <div id="container_opiniones" class="container-fluid hidden-xs big-area">
+            <div class="row max1200 center-block cont_opinion">
+                <div class="col-xs-12">
+                    <h2>Opiniones de los clientes</h2>
+                    <div class="linia03"></div>
+                    <div class="opinio padding_sides_20percent">
+                        <img alt="" src="/assets/img/ico_comillas01.png" class="ico_comillas_l" />
+                        <img alt="" src="/assets/img/ico_comillas02.png" class="ico_comillas_r" />
+                        <h3>Tranquilidad y buena comida</h3>
+                        Hotel excelente, habitaciones amplias y muy limpias, buena comida, paisaje espectacular, ubicación idónea solo me folló la almohada, muy baja y me costó dormir. El servicio esquisto y una amabilidad extraordinaria. Muy bien por el personal.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 	{{!-- end: content container --}}
+	{{> footer }}

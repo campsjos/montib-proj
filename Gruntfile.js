@@ -311,17 +311,29 @@ module.exports = function (grunt) {
 
 		copy: {
 			dist: {
-				expand: true,
-				src: [
-					'assets/css/*.min.css',
-					'assets/fonts/**/*',
-					// Bootstrap fonts
-					'libs/bootstrap/fonts/*',
-					// Bower libs needed for oldIEs. The rest is concatenated via the bower_concat task.
-					'libs/html5shiv/dist/html5shiv-printshiv.min.js',
-					'libs/respondJs/dest/respond.min.js'
-				],
-				dest: '<%= config.dist %>/'
+				files: [
+					{
+						expand: true,
+						src: [
+							'assets/css/*.min.css',
+							'assets/fonts/**/*',
+							// Bootstrap fonts
+							'libs/bootstrap/fonts/*',
+							// Bower libs needed for oldIEs. The rest is concatenated via the bower_concat task.
+							'libs/html5shiv/dist/html5shiv-printshiv.min.js',
+							'libs/respondJs/dest/respond.min.js'
+						],
+						dest: '<%= config.dist %>/'
+					},
+					{
+						expand: true,
+						flatten: true,
+						src: [
+							'libs/blueimp-gallery/img/*'
+						],
+						dest: '<%= config.dist %>/img/'
+					}
+				]
 			},
 			server: {
 				expand: true,
@@ -332,6 +344,7 @@ module.exports = function (grunt) {
 					'assets/img/**/*',
 					'libs/**/*.js',
 					'libs/**/*.css',
+					'libs/blueimp-gallery/img/*',
 					'libs/bootstrap/fonts/*'
 				],
 				dest: '<%= config.server %>/'
@@ -347,14 +360,35 @@ module.exports = function (grunt) {
 					js: '<%= config.dist %>/libs/libs.min.js',
 					css: '<%= config.dist %>/libs/libs.min.css'
 				},
-				include: [
-					'jquery',
-					'bootstrap',
-					'jquery-placeholder'
-				],
+				// include: [
+				// 	'jquery',
+				// 	'bootstrap',
+				// 	'jquery-placeholder',
+				// 	"moment",
+				//     "bootstrap-datetimepicker",
+				//     "waypoints",
+				//     "jquery-unveil",
+				//     "mobile-detect",
+				//     "https://github.com/IanLunn/jQuery-Parallax.git",
+				//     "https://github.com/longbill/jquery-date-range-picker.git"
+				// ],
 				mainFiles: {
 					jquery: ['dist/jquery.js'],
-					bootstrap: ['dist/js/bootstrap.js']
+					bootstrap: ['dist/js/bootstrap.js'],
+					waypoints: ['lib/jquery.waypoints.js'],
+					'blueimp-gallery': [
+						'js/blueimp-gallery.js',
+						'js/blueimp-helper.js',
+						'js/blueimp-gallery-video.js',
+						'css/blueimp-gallery-video.css',
+						'css/blueimp-gallery.css'
+					]
+				},
+				dependencies: {
+					'jquery-placeholder': ['jquery'],
+					'unveil2': ['jquery'],
+					'jquery-parallax': ['jquery'],
+					'jquery-date-range-picker': ['jquery']
 				}
 			}
 		},

@@ -1,0 +1,246 @@
+---
+detalle_blog: active
+---
+    {{> reservar }}
+    {{> header }}
+
+    {{!-- begin: content container --}}
+    <style type="text/css">
+        .banner-pagina-interior {
+            background-image:url(assets/img/banners/banner-listado-blog.jpg);
+        }
+        @media (max-width:767px){ 
+            .banner-pagina-interior {
+                background-image:url(assets/img/banners/banner-listado-blog@xs.jpg);
+            }
+        }
+    </style>
+    <div class="container-fluid banner-pagina-interior banner-standard">
+        <div class="degradat-banner-interior"></div>
+        <div class="text-banner-interior blog-single">
+            <h1>Nuestro blog</h1>
+            <h2>- póngase al día en Montíboli -</h2>
+        </div>
+    </div>
+    <div class="row visible-xs">
+        <div class="col-xs-12"><a href="" class="b_generic03"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Ver todas las entradas</a></div>
+    </div>
+    <!-- Imagen principal del articulo para vista móvil -->
+    <img alt="" class="img-responsive visible-xs lazy" data-src="assets/img/blog/01.jpg" />
+    <div id="section-content" class="grey-bg">
+        <div id="breadcrumbs" class="container">
+            <ol class="breadcrumb center-block">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li class="active">Título corto del blog</li>
+            </ol>
+        </div>
+    
+        <div class="container small-area">
+            <div class="row">
+                <div class="col-md-8 blog">
+                    <div class="row post">
+                        
+                        <div class="fecha">19/04/2015</div>
+                        
+                        <h1 class="post-title">Título corto del blog</h1>
+
+                        <!-- Imagen principal del articulo para vista tablet-desktop -->
+                        <img alt="" class="img-responsive hidden-xs lazy" data-src="assets/img/blog/01.jpg" />
+                        
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus convallis enim et dapibus. Morbi metus nisl, sagittis sed elit non, varius bibendum felis. Suspendisse pulvinar luctus diam sed posuere. Ut eu ex accumsan, hendrerit diam eu, rhoncus mauris. Nullam rutrum libero ac magna interdum ullamcorper a non quam. Pellentesque porta laoreet bibendum. Nullam vel magna cursus, fermentum arcu sit amet, ornare urna.</p>
+                        
+                        <div class="container-detalle-galeria container-fluid">
+                            <div id="links" class="cont-galeria blueimp-gallery-controls wp-galeria" data-type="galeria-default" data-items="assets/img/habitaciones/doble-colonial01.jpg,assets/img/habitaciones/doble-colonial02.jpg,assets/img/habitaciones/doble-colonial03.jpg,assets/img/habitaciones/doble-colonial04.jpg,assets/img/habitaciones/doble-colonial05.jpg,assets/img/habitaciones/doble-colonial06.jpg">
+                                <div class="gallery-content row"></div>
+                                <div class="gallery-carousel row"></div>
+                                <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+                                    <div class="slides"></div>
+                                    
+                                    <a class="prev carousel-control left">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="next carousel-control right">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                    <a class="close">×</a>
+                                    <a class="play-pause"></a>
+                                    <ol class="indicator"></ol>
+                                    <div class="modal fade">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                                                    <h4 class="modal-title"></h4>
+                                                </div>
+                                                <div class="modal-body next"></div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default pull-left prev">
+                                                        <i class="glyphicon glyphicon-chevron-left"></i>
+                                                        Previous
+                                                    </button>
+                                                    <button type="button" class="btn btn-primary next">
+                                                        Next
+                                                        <i class="glyphicon glyphicon-chevron-right"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wp-galeria hidden-xs" data-type="galeria-default"></div>
+                        </div>
+                        
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus convallis enim et dapibus. Morbi metus nisl, sagittis sed elit non, varius bibendum felis. Suspendisse pulvinar luctus diam sed posuere. Ut eu ex accumsan, hendrerit diam eu, rhoncus mauris. Nullam rutrum libero ac magna interdum ullamcorper a non quam. Pellentesque porta laoreet bibendum. Nullam vel magna cursus, fermentum arcu sit amet, ornare urna.</p>
+                        
+                        <div class="carousel-blog carousel slide" data-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <picture>
+                                        <source srcset="assets/img/blog/carousel/01.jpg" media="(min-width: 768px)">
+                                        <img srcset="assets/img/blog/carousel/01@sm.jpg" class="img-responsive" alt="">
+                                    </picture>
+                                </div>
+                                <div class="item">
+                                    <picture>
+                                        <source srcset="assets/img/blog/carousel/02.jpg" media="(min-width: 768px)">
+                                        <img srcset="assets/img/blog/carousel/02@sm.jpg" class="img-responsive" alt="">
+                                    </picture>
+                                </div>
+                                <div class="item">
+                                    <picture>
+                                        <source srcset="assets/img/blog/carousel/03.jpg" media="(min-width: 768px)">
+                                        <img srcset="assets/img/blog/carousel/03@sm.jpg" class="img-responsive" alt="">
+                                    </picture>
+                                </div>
+                                <div class="item">
+                                    <picture>
+                                        <source srcset="assets/img/blog/carousel/04.jpg" media="(min-width: 768px)">
+                                        <img srcset="assets/img/blog/carousel/04@sm.jpg" class="img-responsive" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                          
+                            <!-- Controls -->
+                            <a class="left carousel-control" href=".carousel-blog" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href=".carousel-blog" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus convallis enim et dapibus. Morbi metus nisl, sagittis sed elit non, varius bibendum felis. Suspendisse pulvinar luctus diam sed posuere. Ut eu ex accumsan, hendrerit diam eu, rhoncus mauris. Nullam rutrum libero ac magna interdum ullamcorper a non quam. Pellentesque porta laoreet bibendum. Nullam vel magna cursus, fermentum arcu sit amet, ornare urna.</p>
+                        
+                        <div id="container-video" data-url="https://www.youtube.com/embed/vIbTZknuAQQ"> </div>
+                        
+                        <div class="links-compartir-post small-area">
+                            <span>Compártelo!</span>
+                            <a class="link_compartir facebook" href="">Facebook</a>
+                            <a class="link_compartir pinterest" href="">Pinterest</a>
+                            <a class="link_compartir whatsapp visible-xs" href="">Whatsapp</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 sidebar-blog">
+                    <div class="widget first"><a href="" class="b_generic01">Ver todos los posts</a></div>
+                    <div class="widget feat-post hidden-xs">
+                        <div class="titulo-widget">Lo más popular</div>
+                        <img alt="" class="img-responsive" src="assets/img/blog/widget01.jpg" />
+                        <h3>Título corto del blog</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus convallis enim et dapibus...</p>
+                        <a href="" class="b_generic01">Leer más</a>
+                    </div>
+                    <div class="widget">
+                        <h4 class="titulo-widget">Síguenos online</h4>
+                        <a class="link_facebook" href="" target="_blank">Facebook</a>
+                        <a class="link_pinterest" href="" target="_blank">Pinterest</a>
+                    </div>
+                    <div class="widget clearfix newsletter">
+                        <h4 class="titulo-widget">Newsletter</h4>
+                        <form class="form01">
+                            <input type="text" placeholder="escribe tu email" />
+                            <input type="submit" value="" />
+                        </form>
+                    </div>
+                    <div class="widget tags">
+                        <h4 class="titulo-widget">Tags</h4>
+                        <ul>
+                            <li><a href="#">gastronomia</a></li>
+                            <li><a href="#" class="text-tamany-01">lujo</a></li>
+                            <li><a href="#">restaurante</a></li>
+                            <li><a href="#">suite</a></li>
+                            <li><a href="#" class="text-tamany-02">ejemplodetag</a></li>
+                            <li><a href="#">spa</a></li>
+                            <li><a href="#" class="text-tamany-03">tratamiento con agua</a></li>
+                            <li><a href="#" class="text-tamany-01">otro tag</a></li>
+                            <li><a href="#">gastronomia</a></li>
+                            <li><a href="#">lujo</a></li>
+                            <li><a href="#">restaurante</a></li>
+                            <li><a href="#">suite</a></li>
+                            <li><a href="#" class="text-tamany-04">ejemplo de tag</a></li>
+                            <li><a href="#">spa</a></li>
+                            <li><a href="#">tratamiento</a></li>
+                        </ul>
+                    </div>
+                    <div class="widget">
+                        <h4 class="titulo-widget">Últimos posts</h4>
+                        <ul>
+                            <li><a href="">Ejemplo de título de post</a></li>
+                            <li><a href="">Título de entrada del blog un poco más larga</a></li>
+                            <li><a href="">Título corto</a></li>
+                            <li><a href="">Esto es un título de entrada</a></li>
+                            <li><a href="">Título de entrada del blog un poco más larga</a></li>
+                        </ul>
+                    </div>
+                    <div class="widget">
+                        <h4 class="titulo-widget">Cronología</h4>
+                        <button class="any-cronologia" type="button" data-toggle="collapse" data-target="#crono_2015">
+                            2015 <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                        </button>
+                        <ul class="collapse list-cronologia" id="crono_2015">
+                            <li><a href="">Diciembre 2015</a></li>
+                            <li><a href="">Noviembre 2015</a></li>
+                            <li><a href="">Octubre 2015</a></li>
+                            <li><a href="">Septiembre 2015</a></li>
+                            <li><a href="">Agosto 2015</a></li>
+                            <li><a href="">Julio 2015</a></li>
+                            <li><a href="">Junio 2015</a></li>
+                            <li><a href="">Mayo 2015</a></li>
+                            <li><a href="">Abril 2015</a></li>
+                            <li><a href="">Marzo 2015</a></li>
+                            <li><a href="">Febrero 2015</a></li>
+                            <li><a href="">Enero 2015</a></li>
+                        </ul>
+                        
+                        <div class="clear"></div>
+                        
+                        <button class="any-cronologia" type="button" data-toggle="collapse" data-target="#crono_2014">
+                            2014 <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                        </button>
+                        <ul class="collapse list-cronologia" id="crono_2014">
+                            <li><a href="">Diciembre 2014</a></li>
+                            <li><a href="">Noviembre 2014</a></li>
+                            <li><a href="">Octubre 2014</a></li>
+                            <li><a href="">Septiembre 2014</a></li>
+                            <li><a href="">Agosto 2014</a></li>
+                            <li><a href="">Julio 2014</a></li>
+                            <li><a href="">Junio 2014</a></li>
+                            <li><a href="">Mayo 2014</a></li>
+                            <li><a href="">Abril 2014</a></li>
+                            <li><a href="">Marzo 2014</a></li>
+                            <li><a href="">Febrero 2014</a></li>
+                            <li><a href="">Enero 2014</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{!-- end: content container --}}
+    {{> footer }}

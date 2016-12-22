@@ -1,0 +1,200 @@
+---
+listado_blog: active
+---
+    {{> reservar }}
+    {{> header }}
+
+    {{!-- begin: content container --}}
+    <style type="text/css">
+        .banner-pagina-interior {
+            background-image:url(assets/img/banners/banner-listado-blog.jpg);
+        }
+        @media (max-width:767px){ 
+            .banner-pagina-interior {
+                background-image:url(assets/img/banners/banner-listado-blog@xs.jpg);
+            }
+        }
+    </style>
+    <div class="container-fluid banner-pagina-interior banner-standard">
+        <div class="degradat-banner-interior"></div>
+        <div class="text-banner-interior">
+            <h1>Nuestro blog</h1>
+            <h2>- póngase al día en Montíboli -</h2>
+        </div>
+    </div>
+
+    <div id="section-content" class="grey-bg">
+        <div id="breadcrumbs" class="container">
+            <ol class="breadcrumb center-block">
+                <li><a href="#">Inicio</a></li>
+                <li class="active">Blog</li>
+            </ol>
+        </div>
+        
+        <div id="listado-blog" class="container small-area">
+            <div class="row">
+                <div class="col-md-8 blog">
+                    <div class="row fila_listado_blog">
+                        <div class="col-md-6 imagen-listado-blog hidden-xs hidden-sm"><a title="" href="#" data-src="assets/img/blog/01_p.jpg" class="lazy"></a></div>
+                        <div class="col-md-6">
+                            <div class="resumen-post">
+                                <div class="fecha">19/04/2015</div>
+                                <h3><a title="" href="#">Título corto del blog</a></h3>
+                                <img alt="" class="lazy img-responsive visible-sm visible-xs" data-src="assets/img/blog/01_p.jpg" />
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus convallis enim et dapibus. Morbi metus nisl, sagittis sed elit non, varius bibendum felis. Suspendisse pulvinar.</p>
+                            </div>
+                            <a href="" class="b_generic01 b_listado_blog">Leer más</a>
+                        </div>
+                    </div>
+                    <div class="row fila_listado_blog">
+                        <div class="col-md-6 imagen-listado-blog hidden-xs hidden-sm"><a title="" href="#" data-src="assets/img/blog/01_p.jpg" class="lazy"></a></div>
+                        <div class="col-md-6">
+                            <div class="resumen-post">
+                                <div class="fecha">19/04/2015</div>
+                                <h3><a title="" href="#">Título corto del blog</a></h3>
+                                <img alt="" class="lazy img-responsive visible-sm visible-xs" data-src="assets/img/blog/01_p.jpg" />
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus convallis enim et dapibus. Morbi metus nisl, sagittis sed elit non, varius bibendum felis. Suspendisse pulvinar.</p>
+                            </div>
+                            <a href="" class="b_generic01 b_listado_blog">Leer más</a>
+                        </div>
+                    </div>
+                    <div class="row fila_listado_blog">
+                        <div class="col-md-6 imagen-listado-blog hidden-xs hidden-sm"><a title="" href="#" data-src="assets/img/blog/01_p.jpg" class="lazy"></a></div>
+                        <div class="col-md-6">
+                            <div class="resumen-post">
+                                <div class="fecha">19/04/2015</div>
+                                <h3><a title="" href="#">Título corto del blog</a></h3>
+                                <img alt="" class="lazy img-responsive visible-sm visible-xs" data-src="assets/img/blog/01_p.jpg" />
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus convallis enim et dapibus. Morbi metus nisl, sagittis sed elit non, varius bibendum felis. Suspendisse pulvinar.</p>
+                            </div>
+                            <a href="" class="b_generic01 b_listado_blog">Leer más</a>
+                        </div>
+                    </div>
+                    <div class="row fila_listado_blog">
+                        <div class="col-md-6 imagen-listado-blog hidden-xs hidden-sm"><a title="" href="#" data-src="assets/img/blog/01_p.jpg" class="lazy"></a></div>
+                        <div class="col-md-6">
+                            <div class="resumen-post">
+                                <div class="fecha">19/04/2015</div>
+                                <h3><a title="" href="#">Título corto del blog</a></h3>
+                                <img alt="" class="lazy img-responsive visible-sm visible-xs" data-src="assets/img/blog/01_p.jpg" />
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus convallis enim et dapibus. Morbi metus nisl, sagittis sed elit non, varius bibendum felis. Suspendisse pulvinar.</p>
+                            </div>
+                            <a href="" class="b_generic01 b_listado_blog">Leer más</a>
+                        </div>
+                    </div>
+                    <nav>
+                      <ul class="pagination">
+                        <li>
+                          <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li class="active"><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                          <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                </div>
+                <div class="col-md-4 sidebar-blog">
+                    <div class="widget feat-post hidden-xs">
+                        <div class="titulo-widget">Lo más popular</div>
+                        <img alt="" class="lazy img-responsive" data-src="assets/img/blog/widget01.jpg" />
+                        <h3>Título corto del blog</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus convallis enim et dapibus...</p>
+                        <a href="" class="b_generic01">Leer más</a>
+                    </div>
+                    <div class="widget">
+                        <h4 class="titulo-widget">Síguenos online</h4>
+                        <a class="link_facebook" href="" target="_blank">Facebook</a>
+                        <a class="link_pinterest" href="" target="_blank">Pinterest</a>
+                    </div>
+                    <div class="widget clearfix newsletter">
+                        <h4 class="titulo-widget">Newsletter</h4>
+                        <form class="form01">
+                            <input type="text" placeholder="escribe tu email" />
+                            <input type="submit" value="" />
+                        </form>
+                    </div>
+                    <div class="widget tags">
+                        <h4 class="titulo-widget">Tags</h4>
+                        <ul>
+                            <li><a href="#">gastronomia</a></li>
+                            <li><a href="#" class="text-tamany-01">lujo</a></li>
+                            <li><a href="#">restaurante</a></li>
+                            <li><a href="#">suite</a></li>
+                            <li><a href="#" class="text-tamany-02">ejemplodetag</a></li>
+                            <li><a href="#">spa</a></li>
+                            <li><a href="#" class="text-tamany-03">tratamiento con agua</a></li>
+                            <li><a href="#" class="text-tamany-01">otro tag</a></li>
+                            <li><a href="#">gastronomia</a></li>
+                            <li><a href="#">lujo</a></li>
+                            <li><a href="#">restaurante</a></li>
+                            <li><a href="#">suite</a></li>
+                            <li><a href="#" class="text-tamany-04">ejemplo de tag</a></li>
+                            <li><a href="#">spa</a></li>
+                            <li><a href="#">tratamiento</a></li>
+                        </ul>
+                    </div>
+                    <div class="widget">
+                        <h4 class="titulo-widget">Últimos posts</h4>
+                        <ul>
+                            <li><a href="">Ejemplo de título de post</a></li>
+                            <li><a href="">Título de entrada del blog un poco más larga</a></li>
+                            <li><a href="">Título corto</a></li>
+                            <li><a href="">Esto es un título de entrada</a></li>
+                            <li><a href="">Título de entrada del blog un poco más larga</a></li>
+                        </ul>
+                    </div>
+                    <div class="widget">
+                        <h4 class="titulo-widget">Cronología</h4>
+                        <button class="any-cronologia" type="button" data-toggle="collapse" data-target="#crono_2015">
+                            2015 <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                        </button>
+                        <ul class="collapse list-cronologia" id="crono_2015">
+                            <li><a href="">Diciembre 2015</a></li>
+                            <li><a href="">Noviembre 2015</a></li>
+                            <li><a href="">Octubre 2015</a></li>
+                            <li><a href="">Septiembre 2015</a></li>
+                            <li><a href="">Agosto 2015</a></li>
+                            <li><a href="">Julio 2015</a></li>
+                            <li><a href="">Junio 2015</a></li>
+                            <li><a href="">Mayo 2015</a></li>
+                            <li><a href="">Abril 2015</a></li>
+                            <li><a href="">Marzo 2015</a></li>
+                            <li><a href="">Febrero 2015</a></li>
+                            <li><a href="">Enero 2015</a></li>
+                        </ul>
+                        
+                        <div class="clear"></div>
+                        
+                        <button class="any-cronologia" type="button" data-toggle="collapse" data-target="#crono_2014">
+                            2014 <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                        </button>
+                        <ul class="collapse list-cronologia" id="crono_2014">
+                            <li><a href="">Diciembre 2014</a></li>
+                            <li><a href="">Noviembre 2014</a></li>
+                            <li><a href="">Octubre 2014</a></li>
+                            <li><a href="">Septiembre 2014</a></li>
+                            <li><a href="">Agosto 2014</a></li>
+                            <li><a href="">Julio 2014</a></li>
+                            <li><a href="">Junio 2014</a></li>
+                            <li><a href="">Mayo 2014</a></li>
+                            <li><a href="">Abril 2014</a></li>
+                            <li><a href="">Marzo 2014</a></li>
+                            <li><a href="">Febrero 2014</a></li>
+                            <li><a href="">Enero 2014</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{!-- end: content container --}}
+    {{> footer }}

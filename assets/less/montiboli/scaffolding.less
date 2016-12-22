@@ -6,19 +6,262 @@
 // `html`, `body` etc. and to override the content of
 // /libs/bootstrap/less/scaffolding.less
 
-// html
 html {
-	// Get properties related to sticky footer. See footer.less
-	.mm_footer-htmlProps();
+   -ms-overflow-style: scrollbar;
+}
+
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 { min-height: 0; /*padding-right:0; padding-left:0; */}
+// .row {
+//     margin-left: 0px;
+//     margin-right: 0px;
+// }
+
+h1 {
+
+    font-family: "theano_didotregular";
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-transform:uppercase;
+}
+
+h2 { 
+
+    font-family: "theano_didotregular";
+    color: #b69f69;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+h2 a {
+    -webkit-transition: .6s;
+    transition: .6s;
+}
+
+h2 a:hover {
+    color: #671575;
 }
 
 
-// body
-body {
-	overflow-y: scroll;
-	padding-top: 70px;
-	padding-bottom: 30px;
 
-	// Get properties related to sticky footer. See footer.less
-	.mm_footer-bodyProps();
+h3 {
+    line-height: 1.3;
+}
+
+h3 a {
+    -webkit-transition: .6s;
+    transition: .6s;
+}
+
+h3 a:hover {
+    color: #671575;
+}
+
+p { margin: 15px 0;}
+
+img{
+    display:block;
+    border:none;
+}
+
+.img-responsive-100x100{
+    width:100%;
+    height: auto;
+}
+
+a,
+button{
+    outline:none;
+    color: inherit;
+}
+
+a:hover, a:focus {
+    outline: 0 none;
+    text-decoration: none;
+    color: inherit;
+}
+
+button{
+    font-family:'Oswald', sans-serif;
+    font-weight: 300;
+}
+
+input{
+    outline:none;
+}
+
+.overflowx-hidden { overflow-x: hidden;}
+
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.floatl{
+    float:left;
+}
+
+.floatr{
+    float:right;
+}
+
+.clear{
+    clear:both;
+}
+
+.pos-rel{
+    position:relative;
+}
+
+.v-center{
+    position:absolute;
+    top:50%;
+    -ms-transform:translateY(-50%);
+    -webkit-transform:translateY(-50%);
+    -moz-transform:translateY(-50%);
+    transform:translateY(-50%);
+}
+
+.background-grey{
+    background:#f2f2f2;
+}
+
+.max1200{
+    max-width:1000px;
+}
+
+.max1600{
+    max-width:1600px;
+}
+
+
+.padding_left_20{
+    padding-left:20px;
+}
+
+.padding_right_20{
+    padding-right:20px;
+}
+
+.padding_right_40{
+    padding-right:40px;
+}
+
+.padding_bottom_80{
+    padding-bottom:80px;
+}
+
+.padding_bottom_30{
+    padding-bottom:30px;
+}
+
+.padding_sides_3{
+    padding:0 3px;
+}
+
+.padding_sides_13{
+    padding:0 13px;
+}
+
+.padding_sides_30{
+    padding:0 30px;
+}
+
+.padding_sides_20percent{
+    padding:0 20%;
+}
+
+.scrolloff{
+    pointer-events:none;
+}
+
+.small-area{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.medium-area{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.big-area{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.linia01{
+    height:1px;
+    width:30%;
+    max-width:30px;
+    background:#fff;
+    margin:20px auto;
+}
+
+.linia02{
+    height:1px;
+    width:100%;
+    background:#eee;
+}
+
+.linia03{
+    width:30%;
+    max-width:55px;
+    height:1px;
+    background:rgba(0,0,0,.4);
+    margin:25px auto;
+}
+
+.image-effect-link{
+    overflow: hidden;
+    display: block;
+    background: #000;
+}
+
+.image-effect-link img {
+    -webkit-transition: 2s;
+    transition: 2s;
+}
+
+.image-effect-link:hover img{
+    opacity: .8;
+    -ms-transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+    transform: scale(1.07);
+}
+
+.load-item {
+    -webkit-transition: .6s;
+    transition: .6s;
+    position: relative;
+    top: 40px;
+    opacity: 0;
+}
+
+.load-item.item-done {
+    opacity: 1;
+    top: 0;
+}
+
+.blueimp-gallery-carousel {
+    padding-bottom: 67%;
+    box-shadow: none;
+    background-color: transparent;
+    margin: 0;
+}
+.blueimp-gallery-carousel .close{
+    display: none;
+}
+
+.carousel-control {
+    width: 8%;
+    cursor: pointer;
+    -webkit-transition: .6s;
+    transition: .6s;
 }

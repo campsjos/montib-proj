@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js ie lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js ie lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js ie lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js ie lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+	<!-- Meta, title, CSS, favicons, etc. -->
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="author" content="Atoom Studio" />
+	<title>Montíboli</title>
+
+	<!-- Libs -->
+	<!-- build:css:dist libs/libs.min.css -->
+	<link href="libs/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css" type="text/css" rel="stylesheet" />
+    <link href="libs/jquery-date-range-picker/src/daterangepicker.css" type="text/css" rel="stylesheet" /> 
+    <link href="libs/blueimp-gallery/css/blueimp-gallery.css" type="text/css" rel="stylesheet" />
+    <link href="libs/blueimp-gallery/css/blueimp-gallery-video.css" type="text/css" rel="stylesheet" />
+	<!-- /build -->
+
+	<!-- Our compiled and merged LESS files -->
+	<!-- build:css:dist assets/css/index.min.css -->
+	<link href="assets/css/index.css" rel="stylesheet" />
+	<!-- /build -->
+
+	<!--
+	Replace "no-js" class with "js" in case JavaScript is available.
+	You can delete this when you feel the need to make use of modernizr.
+	-->
+	<script>(function(h){h.className = h.className.replace('no-js', 'js')})(document.documentElement)</script>
+
+	<script type="text/javascript">
+        var isOldIE = false;
+    </script>
+    <!--[if lte IE 8]>
+        <link href="css/ie8-style.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript">
+            isOldIE = true;
+        </script>
+    <![endif]-->
+    <!--[if IE 9]>
+        <link href="css/ie9-style.css" type="text/css" rel="stylesheet" />
+    <![endif]-->
+	<!-- HTML5 shim and Respond.js IE8 support for HTML5 elements and media queries. -->
+	<!--[if lt IE 9]>
+		<script src="libs/html5shiv/dist/html5shiv-printshiv.min.js"></script>
+		<script src="libs/respondJs/dest/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory. -->
+
+	<!-- Place anything custom after this. But put JS to the end of body. -->
+</head>
+
+<body id=""  class="">
+	<!--[if lt IE 8>
+	<p class="browsehappy">
+		You are using an <strong>outdated</strong> browser.
+		Please <a href="http://browsehappy.com/">upgrade your browser</a>
+		to improve your experience.
+	</p>
+<![endif]-->
+
+	
+    <div id="reservar">
+        <img alt="" class="b_cerrar_reservas" src="/assets/img/b_cerrar.png" />
+        <div class="container-fluid max1600 medium-area">
+            <form action="" method="get">
+                <div class="row">
+                    <div class="col-sm-6 col-md-5 col-lg-4">
+                        <div class="row visible-xs">
+                            <div class="col-xs-12 col">
+                                <input type="text" class="date01" id="datetimepicker1" name="fecha_entrada" readonly/>
+                            </div>
+                            <div class="col-xs-12 col">
+                                <input type="text" class="date01" id="datetimepicker2" name="fecha_salida" readonly/>
+                            </div>
+                        </div>
+                        <div class="row visible-xs">
+                            <div class="col-md-12 col text-center">
+                                <p class="help-block noches">1 noche</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col">
+                                <select class="select01" name="habitaciones">
+                                    <option value="">Num. habitaciones</option>
+                                    <option value="1">1 habitaciones</option>
+                                    <option value="2">2 habitaciones</option>
+                                    <option value="3">3 habitaciones</option>
+                                    <option value="4">4 habitaciones</option>
+                                    <option value="5">5 habitaciones</option>
+                                    <option value="6">6 habitaciones</option>
+                                    <option value="7">7 habitaciones</option>
+                                    <option value="8">8 habitaciones</option>
+                                </select>
+                                <div class="habitaciones"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col">
+                                <input type="submit" class="b_generic01" value="Enviar" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-7 col-lg-8">
+                        <div class="row hidden-xs">
+                            <div class="col-md-6 col">
+                                <div class="titol-data">Fecha entrada</div>
+                                <input type="text" class="rangepicker" name="fecha_entrada" readonly id="fecha_entrada" />
+                            </div>
+                            <div class="col-md-6 col">
+                                <div class="titol-data">Fecha salida</div>
+                                <input type="text" class="rangepicker" name="fecha_salida" readonly id="fecha_salida" />
+                            </div>
+                        </div>
+                        <div class="row hidden-xs">
+                            <div class="col-md-12 col text-center">
+                                <p class="help-block noches">1 noche</p>
+                            </div>
+                        </div>
+                        <div class="row hidden-xs">
+                            <div class="col-md-12 col">
+                                <div id="bookingrangepicker"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>    <div id="header_wrapper" class="navbar navbar-default">
+        <div id="header" class="container-fluid">
+            <div class="row">
+                <div id="lang-wrapper" class="col-xs-2 col-lg-1">
+                    <div class="dropdown">
+                        <button id="language_selector" type="button" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-flag hidden-xs" aria-hidden="true"></span>
+                            <span class="main-lang">&nbsp;Español</span><span class="glyphicon glyphicon-menu-down"></span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-language">
+                            <li><a href="">Català</a></li>
+                            <li><a href="">English</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="logo-wrapper" class="col-xs-8 col-lg-10 text-center">
+                    <div id="logo">
+                        <img title="Hotel Servigroup Montiboli" class="img-responsive" src="/assets/img/logo-symbol.png" alt="Hotel Servigroup Montiboli" />
+    
+                        <div class="text">
+                            <span>Web Oficial</span>
+                                <p class="brand">Hotel <strong>Servigroup</strong><br><strong class="big">Montiboli</strong><sup><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i></sup></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="book-wrapper" class="col-xs-2 col-lg-1 visible-lg">
+                    <div class="book-area dropdown">
+                        <button class="b_reservar" class="b_reservar" type="button">
+                            Reservas
+                        </button>
+                        <button class="b_opciones" type="button" data-toggle="dropdown">
+                            <img alt="" class="center-block" src="/assets/img/fletxa_link.png" />
+                        </button>
+                        <ul class="dropdown-menu dropdown-opcions">
+                            <li class="mi-reserva"><a href="">Mi reserva</a></li>
+                            <li class="tarifas"><a href="">Tarifas</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="main-nav-container" class="container-fluid">
+            <div class="row cont-menu center-block">
+                <div class="col-sm-12">
+                    	<!-- begin: navbar -->
+                    	<nav class="main-nav">
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li class="has-child">
+                                        <a href="#" class="item">El hotel<span class="glyphicon glyphicon-menu-down visible-lg"></span></a>
+                                        <a data-toggle="collapse" href="#sub-hotel" class="open-sub hidden-lg"><span class="glyphicon glyphicon-menu-down"></span></a>
+                                        <div class="submenu collapse" id="sub-hotel">
+                                            <nav class="sub-nav">
+                                                <ul>
+                                                    <!-- <li class="parent"><a href="">El hotel</a></li> -->
+                                                    <li><a href="">Habitaciones</a></li>
+                                                    <li><a class="active" href="">Instalaciones</a></li>
+                                                    <li><a href="">Gastronomía</a></li>
+                                                    <li><a href="">Multimedia</a></li>
+                                                    <li><a href="">Situación</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="">Ofertas</a>
+                                    </li>
+                                    <li>
+                                        <a class="active" href="">Eventos</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Bodas</a>
+                                    </li>
+                                    <li>
+                                        <a href="">El SPA</a>
+                                    </li>
+                                    <li class="has-child">
+                                        <a href="#" class="item">Entorno<span class="glyphicon glyphicon-menu-down visible-lg"></span></a>
+                                        <a data-toggle="collapse" href="#sub-entorno" class="open-sub hidden-lg"><span class="glyphicon glyphicon-menu-down"></span></a>
+                                        <div class="submenu collapse" id="sub-entorno">
+                                            <nav class="sub-nav">
+                                                <ul>
+                                                    <!-- <li class="parent"><a href="">Entorno</a></li> -->
+                                                    <li><a href="">Habitaciones</a></li>
+                                                    <li><a class="active" href="">Instalaciones</a></li>
+                                                    <li><a href="">Gastronomía</a></li>
+                                                    <li><a href="">Multimedia</a></li>
+                                                    <li><a href="">Situación</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="">Contacto</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Agencia</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    	<!-- end: navbar -->
+                </div>
+            </div>
+            <div class="container-fluid hidden-lg">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="book-area dropdown">
+                            <button class="b_reservar" type="button">
+                                Reserva ahora<img alt="" src="/assets/img/fletxa_link.png" />
+                            </button>
+                            <button class="b_opciones" type="button" data-toggle="dropdown">
+                                <img alt="" class="center-block" src="/assets/img/fletxa_link.png" />
+                            </button>
+                            <ul class="dropdown-menu dropdown-opcions">
+                                <li class="mi-reserva"><a href="">Mi reserva</a></li>
+                                <li class="tarifas"><a href="">Tarifas</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <style type="text/css">
+        .banner-pagina-interior {
+            background-image:url(assets/img/banners/banner-listado-ofertas.jpg);
+        }
+        @media (max-width:767px){ 
+            .banner-pagina-interior {
+                background-image:url(assets/img/banners/banner-listado-ofertas@xs.jpg);
+            }
+        }
+    </style>
+    <div class="container-fluid banner-pagina-interior banner-standard">
+        <div class="degradat-banner-interior"></div>
+        <div class="text-banner-interior">
+            <h1>Ofertas y novedades</h1>
+            <h2>- Momentos especiales -</h2>
+        </div>
+    </div>
+
+    <div id="section-content" class="light-bg">
+        <div id="breadcrumbs" class="container">
+            <ol class="breadcrumb center-block">
+                <li><a href="#">Inicio</a></li>
+                <li class="active">Ofertas</li>
+            </ol>
+        </div>
+        
+        <div id="listado-ofertas" class="container small-area list-compact">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 padding_sides_13 item load-item">
+                    <a title="" href="#" class="image-effect-link"><img alt="" class="lazy img-responsive-100x100" data-src="assets/img/ofertas/nuestras-tarifas.jpg" /></a>
+                    <h2 class="titol-list-compact"><a title="" href="#">Escápate con tu pareja</a></h2>
+                    <div class="linia05"></div>
+                    <p>Ven con nosotros y sentirás cómo el tiempo se detiene junto a tu pareja.</p>
+                    <a href="" class="b_generic01 b_generic01_center">Vea la oferta</a>
+                </div>
+                <div class="col-sm-6 col-md-4 padding_sides_13 item load-item">
+                    <a title="" href="#" class="image-effect-link"><img alt="" class="lazy img-responsive-100x100" data-src="assets/img/ofertas/gastronomia-montiboli.jpg" /></a>
+                    <h2 class="titol-list-compact"><a title="" href="#">Especial Navidades 2015</a></h2>
+                    <div class="linia05"></div>
+                    <p>Vive unas inolvidables Navidades en el mejor entorno y con la mejor gastronomía...</p>
+                    <a href="" class="b_generic01 b_generic01_center">Vea la oferta</a>
+                </div>
+
+                <div class="clearfix visible-sm-block"></div>
+
+                <div class="col-sm-6 col-md-4 padding_sides_13 item load-item">
+                    <a title="" href="#" class="image-effect-link"><img alt="" class="lazy img-responsive-100x100" data-src="assets/img/ofertas/convenciones-banquetes.jpg" /></a>
+                    <h2 class="titol-list-compact"><a title="" href="#">Regala Montíboli</a></h2>
+                    <div class="linia05"></div>
+                    <p>¿Buscas un regalo muy especial? Te lo ponemos fácil.</p>
+                    <a href="" class="b_generic01 b_generic01_center">Vea la oferta</a>
+                </div>
+
+                <div class="clearfix visible-md-block visible-lg-block"></div>
+
+                <div class="col-sm-6 col-md-4 padding_sides_13 item load-item">
+                    <a title="" href="#" class="image-effect-link"><img alt="" class="lazy img-responsive-100x100" data-src="assets/img/ofertas/nuestras-tarifas.jpg" /></a>
+                    <h2 class="titol-list-compact"><a title="" href="#">Nuestras tarifas</a></h2>
+                    <div class="linia05"></div>
+                    <p>No podrás evitar el placer de alojarte en nuestra casa.</p>
+                    <a href="" class="b_generic01 b_generic01_center">Vea la oferta</a>
+                </div>
+
+                <div class="clearfix visible-sm-block"></div>
+
+                <div class="col-sm-6 col-md-4 padding_sides_13 item load-item">
+                    <a title="" href="#" class="image-effect-link"><img alt="" class="lazy img-responsive-100x100" data-src="assets/img/ofertas/gastronomia-montiboli.jpg" /></a>
+                    <h2 class="titol-list-compact"><a title="" href="#">Gastronomía Montíboli</a></h2>
+                    <div class="linia05"></div>
+                    <p>No renuncies a disfrutar de lo mejor. Déjate seducir por nuestra gastronomía.</p>
+                    <a href="" class="b_generic01 b_generic01_center">Vea la oferta</a>
+                </div>
+                <div class="col-sm-6 col-md-4 padding_sides_13 item load-item">
+                    <a title="" href="#" class="image-effect-link"><img alt="" class="lazy img-responsive-100x100" data-src="assets/img/ofertas/convenciones-banquetes.jpg" /></a>
+                    <h2 class="titol-list-compact"><a title="" href="#">Convenciones y Banquetes</a></h2>
+                    <div class="linia05"></div>
+                    <p>Celebra con nosotros tus momentos más especiales.</p>
+                    <a href="" class="b_generic01 b_generic01_center">Vea la oferta</a>
+                </div>
+                <div class="clearfix visible-md-block visible-lg-block"></div>
+                <div class="clearfix visible-sm-block"></div>
+
+            </div>
+        </div>
+    </div>
+    	<!-- begin: footer -->
+    	<div id="prefooter" class="container-fluid background-grey">
+            <div class="row center-block max1200">
+                <div class="col-xs-12">
+                    <button type="button" class="b_volver_arriba">
+                        <img alt="" class="lazy" src="/assets/img/pixel.png" data-src="/assets/img/ico_volver_arriba.png" />
+                        Volver arriba
+                    </button> 
+                </div>
+            </div>
+            <div class="row center-block max1200 prefooter-box">
+                <div class="col col-md-3 col-sm-6 padding_sides_30">
+                    <div class="col_prefooter">
+                        <h3 class="titol_home_04">Contacta</h3>
+                        Hotel Montiboli<br />
+                        Partida Montíboli S/N<br />
+                        E-03570 Villajoyosa<br />
+                        <br />
+                        +34 965 890 250<br />
+                        montiboli@servigroup.com<br />
+                        <br />
+                        <div class="xarxes-footer">
+                            <a href="" target="_blank"><img alt="" class="lazy floatl facebook" src="/assets/img/pixel.png" data-src="/assets/img/ico_facebook_footer.png" style="width:32px;" /></a>
+                            <a href="" target="_blank"><img alt="" class="lazy floatl pinterest" src="/assets/img/pixel.png" data-src="/assets/img/ico_pinterest_footer.png" style="width:32px;" /></a>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <a href="" class="b_generic01 b_footer">Encuéntranos</a>
+                </div>
+                <div class="col col-md-3 col-sm-6 padding_sides_30">
+                    <div class="col_prefooter">
+                        <h3 class="titol_home_04">Newsletter</h3>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo ipsum, viverra in sapien at, laoreet lobortis lectus.<br />
+                        <br />
+                        <input class="input01" type="email" placeholder="escribe tu email" title="escribe tu email" />
+                    </div>
+                    <a href="" class="b_generic01 b_footer">Enviar mail</a>
+                </div>
+                <div class="col col-md-3 col-sm-6 padding_sides_30">
+                    <div class="col_prefooter">
+                        <h3 class="titol_home_04">Su opinión...</h3>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo ipsum, viverra. Lorem ipsum dolor sit.<br />
+                        <br />
+                        <img alt="" class="lazy" src="/assets/img/pixel.png" data-src="/assets/img/ico_comentarios_footer.png" style="width:50px;" />
+                    </div>
+                    <a href="" class="b_generic01 b_footer">Dénos su opinión</a>
+                </div>
+                <div class="col col-md-3 col-sm-6 padding_sides_30">
+                    <div class="col_prefooter">
+                        <h3 class="titol_home_04">Folleto</h3>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo ipsum<br />
+                        <br />
+                        <img alt="" class="lazy" src="/assets/img/pixel.png" data-src="/assets/img/ico_descarga_footer.png" style="width:36px;" />
+                    </div>
+                    <a href="" class="b_generic01 b_footer">Descargar</a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="footer" class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <a class="footer-logo center-block" title="" href="#" ><img alt="" src="/assets/img/pixel.png" data-src="/assets/img/logo_footer.jpg" class="lazy img-responsive" /></a>
+                    <div class="footer-info">
+                        <span>MONTIBOLI TODOS LOS DERECHOS RESERVADOS 2016</span><a class="footer-link" href="">Términos legales</a><a class="footer-link" href="">Aviso de cookies</a>
+                    </div>
+                    <span>Web Design by: Atoom Studio</span>
+                </div>
+            </div>
+        </div>
+    	<!-- end: footer -->
+
+
+	<!--
+	JavaScript
+	=======================================================
+	Placed at the end of the document. Performance reasons.
+	Non minified/merged versions for debugging purposes are
+	replaced in the production ready build.
+	-->
+
+	<!-- Libs -->
+	<!-- build:js:dist libs/libs.min.js -->
+	<script src="libs/jquery/dist/jquery.js"></script>
+	<script src="libs/jquery-placeholder/jquery.placeholder.js"></script>
+	<script src="libs/bootstrap/js/affix.js"></script>
+	<script src="libs/bootstrap/js/alert.js"></script>
+	<script src="libs/bootstrap/js/button.js"></script>
+	<script src="libs/bootstrap/js/carousel.js"></script>
+	<script src="libs/bootstrap/js/collapse.js"></script>
+	<script src="libs/bootstrap/js/dropdown.js"></script>
+	<script src="libs/bootstrap/js/modal.js"></script>
+	<script src="libs/bootstrap/js/tooltip.js"></script>
+	<script src="libs/bootstrap/js/popover.js"></script>
+	<script src="libs/bootstrap/js/scrollspy.js"></script>
+	<script src="libs/bootstrap/js/tab.js"></script>
+	<script src="libs/bootstrap/js/transition.js"></script>
+	<script src="libs/moment/moment.js"></script>
+	<script src="libs/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js"></script>
+	<script src="libs/waypoints/lib/jquery.waypoints.js"></script>
+	<script src="libs/unveil2/src/jquery.unveil2.js"></script>
+	<script src="libs/mobile-detect/mobile-detect.js"></script>
+	<script src="libs/jquery-parallax/jquery.parallax-1.1.3.js"></script>
+	<script src="libs/jquery-date-range-picker/src/jquery.daterangepicker.js"></script>
+	<script src="libs/blueimp-gallery/js/blueimp-gallery.js"></script>
+	<script src="libs/blueimp-gallery/js/blueimp-gallery-video.js"></script>
+	<script src="libs/blueimp-gallery/js/blueimp-gallery-youtube.js"></script>
+	<!-- /build -->
+
+	<!-- Own JS -->
+	<!-- build:js:dist assets/js/built.min.js -->
+	<script src="assets/js/locale/ca.js"></script>
+	<script src="assets/js/base.js"></script>
+	<script src="assets/js/scripts.js"></script>
+	<!-- /build -->
+
+		<script type="text/javascript">
+		</script>	<!-- External scripts (eg. analytics) should be placed here -->
+
+</body>
+
+</html>
